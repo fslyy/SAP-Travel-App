@@ -1,0 +1,7 @@
+@EndUserText.label: 'customer with bookings'
+@MappingRole: true
+define role Z22_CUSTOMERWITHBOOKINGS {
+  grant select on Z22_CUSTOMERWITHBOOKINGS
+    where (_Bookings.CarrierId = 'LH' or  _Bookings.CarrierId = 'UA')
+      and City = 'Berlin';
+}

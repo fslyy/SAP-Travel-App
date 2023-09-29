@@ -1,0 +1,7 @@
+@EndUserText.label: 'carrier 2'
+@MappingRole: true
+define role Z22_CARRIER2 {
+  grant select on Z22_CARRIER2
+   where inheriting conditions from entity z22_carrier;
+            
+}

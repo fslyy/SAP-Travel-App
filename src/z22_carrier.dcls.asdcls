@@ -1,0 +1,7 @@
+@EndUserText.label: 'carrier'
+@MappingRole: true
+define role Z22_CARRIER {
+  grant select on Z22_CARRIER
+     where CarrierId > 'AA' and CarrierId < 'RZ' ;
+            
+}
